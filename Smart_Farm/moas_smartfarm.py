@@ -5,8 +5,8 @@ import serial
 import time
 import socket
 
-cred = credentials.Certificate("/home/pi/Downloads/nodemcutest-756bb-firebase-adminsdk-ba44u-9c1e26b836.json")
-firebase_admin.initialize_app(cred,{'databaseURL': 'https://nodemcutest-756bb-default-rtdb.firebaseio.com/'})
+cred = credentials.Certificate("")
+firebase_admin.initialize_app(cred,{'databaseURL': '})
 s = serial.Serial('/dev/ttyACM0', 115200)
 
 def ipcheck():
